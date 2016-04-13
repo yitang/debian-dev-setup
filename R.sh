@@ -41,9 +41,9 @@ tryInstallPackages <- function(pkg){
 invisible(sapply(pkgs, tryInstallPackages))' >> pipR.R
 chmod +x pipR.R
 
-sudo apt-get install r-cran-car  # dependence of caret, can't install in R from CRAN
-sudo ./pipR.R ggplot2 lattice data.table reshape2 Rcpp
-sudo ./pipR.R randomForest ranger e1071 glmnet caret
+sudo apt-get install r-cran-car r-cran-readr  # dependence of caret, can't install in R from CRAN
+sudo ./pipR.R ggplot2 lattice data.table reshape2 Rcpp 
+sudo ./pipR.R randomForest ranger e1071 glmnet caret reader
 sudo ./pipR.R microbenchmark 
 sudo rm pipR.R
 
