@@ -30,7 +30,7 @@ tryInstallPackages <- function(pkg){
         msg(pkg, "is already installed, skip...")
         return()
     }
-    tmp <- try(install.packages(pkg, repos = "http://cloud.r-project.org/"),
+    tmp <- try(install.packages(pkg, dependencies = TRUE, repos = "http://cloud.r-project.org/"),
               silent = TRUE)
     if (class(tmp) == "try-error") {
         msg(pkg, "is missing from CRAN.")
