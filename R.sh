@@ -7,15 +7,15 @@ sudo -K
 echo "--------------------------"
 echo "install R (newest version)"
 
-# sudo apt-get install software-properties-common
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-# sudo add-apt-repository -y ppa:marutter/rdev
-# sudo apt-get update
-# sudo apt-get install -y r-base r-base-dev
+sudo apt-get install software-properties-common
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo add-apt-repository -y ppa:marutter/rdev
+sudo apt-get update
+sudo apt-get install -y r-base r-base-dev
 
-# echo "-------------------------"
-# echo "install R core packages"
-# sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
+echo "-------------------------"
+echo "install R core packages"
+sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
 
 echo "------------------------"
 echo "install R packages from CRAN"
