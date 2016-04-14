@@ -8,6 +8,7 @@ echo "--------------------------"
 echo "install R (newest version)"
 
 sudo echo "deb http://ftp.uk.debian.org/debian sid main" >> /etc/apt/sources.list
+sudo apt-get update
 sudo apt-get install r-base r-base-core
 
 echo "-------------------------"
