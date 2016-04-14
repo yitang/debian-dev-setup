@@ -46,24 +46,3 @@ sudo ./pipR.R ggplot2 lattice data.table reshape2 Rcpp
 sudo ./pipR.R randomForest ranger e1071 glmnet caret readr
 sudo ./pipR.R microbenchmark 
 sudo rm pipR.R
-
-
-
-# pkg <- commandArgs(trailingOnly = TRUE)
-# ## print(args)
-# # pkg <- readLines("/home/yitang/git/debian-dot/R_pkg.txt")
-# f <- function(pkg.name) {
-#     pkg.installed <- rownames(installed.packages())
-# cat("\n")
-#     if (pkg.name %in% pkg.installed) {
-#         cat("\n", pkg.name, " is already installed, skip...")
-#         return()
-#     }
-#     tmp <- try(install.packages(pkg.name, repos = "https://www.stats.bris.ac.uk/R/"), silent = TRUE)
-#     if (class(tmp) == "try-error") {
-#         cat("\n", pkg.name, " can not be installed")
-#     } else {
-#         cat("\n", pkg.name, " is installed")
-#     }
-# }
-# invisible(sapply(pkg, f))'
