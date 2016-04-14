@@ -16,12 +16,16 @@ sudo apt-get install python3-pip
 
 echo "-----------------------"
 echo "Installing python packages for data analysis"
-# Install Python data modules
-sudo pip3 install numpy
-sudo pip3 install scipy
-sudo pip3 install matplotlib
-sudo pip3 install pandas
-sudo pip3 install unittest2
-sudo pip3 install seaborn
+
+echo "Installing using Debian's repo"
+sudo apt-get install \
+     python3-numpy \
+     python3-scipy \
+     python3-pandas \
+     python3-unittest2 \
+     python3-seaborn \
+     python3-matplotlib \
+     #     python3-scikit-learn  # only aviable on sid. 
+
+echo "Installing using pip"
 sudo pip3 install scikit-learn
-sudo pip3 install "ipython[all]"
