@@ -22,9 +22,8 @@ sudo apt-get install \
      python3-numpy \
      python3-scipy \
      python3-pandas \
-     python3-unittest2 \
      python3-seaborn \
-     python3-matplotlib \
+     python3-matplotlib 
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
