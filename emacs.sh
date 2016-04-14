@@ -13,11 +13,3 @@ echo "--------------------"
 echo "Installing emacs-snapshot"
 sudo apt-get update
 sudo apt-get install emacs-snapshot emacs-snapshot-gtk 
-
-# sudo apt-get install org-mode
-
-
-# deb http://emacs.naquadah.org/ stable/
-# deb-src http://emacs.naquadah.org/ stable/
-
-# "deb http://www.stats.bris.ac.uk/R/bin/linux/debian jessie-cran3/" > /etc/apt/sources.list.d/R.list
