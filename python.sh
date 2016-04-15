@@ -22,10 +22,27 @@ sudo apt-get install \
      python3-numpy \
      python3-scipy \
      python3-pandas \
-     python3-unittest2 \
      python3-seaborn \
-     python3-matplotlib \
+     python3-matplotlib 
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
 sudo pip3 install scikit-learn
+
+echo "--------------------"
+echo "Installing xgbost"
+git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
+cd /tmp/xgboost
+sudo ./build.sh
+cd python-package
+sudo python3 setup.py install
+rm -rf /tmp/xgboost
+
+
+echo "--------------------"
+echo "Installing hyperopt"
+git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
+cd /tmp/hyperopt/python3_version
+sudo python3 setup.py install
+sudo pip3 install networkx
+rm -rf /tmp/hyperopt
