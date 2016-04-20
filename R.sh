@@ -19,37 +19,52 @@ echo "------------------------"
 echo "install R packages from CRAN"
 
 echo '#!/usr/bin/env Rscript
-library(devtools, quiet=T)
 pkgs <- commandArgs(trailingOnly = TRUE)
+
 if (pkgs[1] == "--github") {
+    library(devtools, quiet=T)
     install.from.github <- TRUE
     pkgs <- pkgs[-1]
 } else {
     install.from.github <- FALSE
 }
-tryInstallPackages <- function(pkg){
-    msg <- function(pkg, ...) 
-        cat(sprintf("\n%15s package", pkg), ...)
-    pkg.installed <- rownames(installed.packages())
-    if (pkg %in% pkg.installed) {
-        msg(pkg, "is already installed, skip...")
-        return()
-    }
-    if (install.from.github) {
+
+msg <- function(pkg, ...) cat(sprintf("\n%15s package", pkg), ...)
+
+pkgs.installed <- rownames(installed.packages())
+
+for (pkg in pkgs) {
+    
+    if (install.from.github) { ## install from github
+        pkg.name <- strsplit(pkg, "/")[[1]][2] # REPO/PKG format
+        if (pkg.name %in% pkgs.installed) {
+            msg(pkg, "is already installed, skip...\n")
+            next
+        }
         install <- try(install_github(pkg), silent=T)
-    } else {
+        if (class(install) == "try-error") {
+            msg(pkg, "is missing from ", pkg, "on Github\n")
+        } else {
+            msg(pkg, "is installed")
+        }
+
+        
+    } else {  ## install from CRAN
+        if (pkg %in% pkgs.installed) {
+            msg(pkg, "is already installed, skip...\n")
+            next
+        }
         install <- try(install.packages(pkg, dependencies = TRUE, repos = "http://cloud.r-project.org/"),
-            silent = TRUE)
-    }
-    if (class(install) == "try-error") {
-        msg(pkg, "is missing from ", ifelse(install.from.github,
-                                            paste("Github repo", pkg),
-                                            "CRAN."))
-    } else {
-        msg(pkg, "is installed")
+                      silent = TRUE)
+        if (class(install) == "try-error") {
+            msg(pkg, "is missing from ", pkg, "on Github\n")
+        } else {
+            msg(pkg, "is installed")
+        }
+
     }
 }
-invisible(sapply(pkgs, tryInstallPackages))' >> pipR.R
+' >> pipR.R
 chmod +x pipR.R
 
 # dependence of caret, can't install in R from CRAN
