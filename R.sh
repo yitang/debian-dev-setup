@@ -7,8 +7,9 @@ sudo -K
 echo "--------------------------"
 echo "install R"
 
-# sudo echo "deb http://ftp.uk.debian.org/debian sid main" >> /etc/apt/sources.list
-# sudo apt-get update
+sudo echo "deb http://http://cloud.r-project.org/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list.d/R.list
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key 381BA480
+sudo apt-get update
 sudo apt-get install r-base r-base-core
 
 echo "-------------------------"
