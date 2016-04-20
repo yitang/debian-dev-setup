@@ -11,6 +11,8 @@ sudo echo "deb http://http://cloud.r-project.org/bin/linux/debian jessie-cran3/"
 sudo apt-key adv --keyserver keys.gnupg.net --recv-key 381BA480
 sudo apt-get update
 sudo apt-get install r-base r-base-core
+sudo apt-get build-dep r-base # install X11, latex and other stuff
+
 
 echo "-------------------------"
 echo "install R core packages"
