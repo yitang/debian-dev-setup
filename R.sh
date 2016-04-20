@@ -62,4 +62,6 @@ sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth
 sudo ./pipR.R microbenchmark lubridate argparser ascii
 # package development
 sudo ./pipR.R roxygen2 devtools
+# database
+sudo ./pipR.R --github rstats-db/RPostgres
 sudo rm pipR.R
