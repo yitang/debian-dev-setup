@@ -39,8 +39,12 @@ tryInstallPackages <- function(pkg){
 invisible(sapply(pkgs, tryInstallPackages))' >> pipR.R
 chmod +x pipR.R
 
-sudo apt-get install r-cran-car r-cran-rcurl  # dependence of caret, can't install in R from CRAN
-sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp # core packages
-sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth # pakcages for ml
-sudo ./pipR.R microbenchmark lubridate # utils
+# dependence of caret, can't install in R from CRAN
+sudo apt-get install r-cran-car r-cran-rcurl  
+# core packages
+sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp 
+# pakcages for ml
+sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth 
+# utils
+sudo ./pipR.R microbenchmark lubridate argparser
 sudo rm pipR.R
