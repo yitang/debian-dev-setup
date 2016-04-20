@@ -46,5 +46,5 @@ sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp
 # pakcages for ml
 sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth 
 # utils
-sudo ./pipR.R microbenchmark lubridate argparser
+sudo ./pipR.R microbenchmark lubridate argparser ascii
 sudo rm pipR.R
