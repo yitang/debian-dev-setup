@@ -11,3 +11,5 @@ sudo apt-get install git
 sudo apt-get install libcurl4-openssl-dev libssl-dev
 
 sudo apt-get install libnlopt libssl-dev
+
+sudo apt-get install postgresql postgresql-client libpq-dev
