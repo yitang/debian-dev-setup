@@ -4,19 +4,19 @@
 # This script might be run with .dots, which uses elevated privileges
 sudo -K
 
-echo "--------------------------"
-echo "install R"
+# echo "--------------------------"
+# echo "install R"
 
-sudo echo "deb http://http://cloud.r-project.org/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list.d/R.list
-sudo apt-key adv --keyserver keys.gnupg.net --recv-key 381BA480
-sudo apt-get update
-sudo apt-get install r-base r-base-core
-sudo apt-get build-dep r-base # install X11, latex and other stuff
+# sudo echo "deb http://http://cloud.r-project.org/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list.d/R.list
+# sudo apt-key adv --keyserver keys.gnupg.net --recv-key 381BA480
+# sudo apt-get update
+# sudo apt-get install r-base r-base-core
+# sudo apt-get build-dep r-base # install X11, latex and other stuff
 
 
-echo "-------------------------"
-echo "install R core packages"
-sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
+# echo "-------------------------"
+# echo "install R core packages"
+# sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
 
 echo "------------------------"
 echo "install R packages from CRAN"
@@ -75,7 +75,7 @@ sudo apt-get install r-cran-car r-cran-rcurl
 # core packages
 sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp 
 # pakcages for ml
-sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth mars
+sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth
 # utils
 sudo ./pipR.R microbenchmark lubridate argparser ascii
 # package development
