@@ -8,7 +8,7 @@ sudo apt-get install build-essential
 
 sudo apt-get install git
 
-sudo apt-get install libcurl4-openssl-dev 
+sudo apt-get install libcurl4-openssl-dev libssl-dev
 
 sudo apt-get install \
      libnlopt \ # numerical optimiser 
