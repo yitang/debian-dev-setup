@@ -79,7 +79,7 @@ sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth
 # utils
 sudo ./pipR.R microbenchmark lubridate argparser ascii
 # package development
-sudo ./pipR.R roxygen2 devtools
+sudo ./pipR.R roxygen2 devtools testthat
 # database
 sudo ./pipR.R --github rstats-db/DBI rstats-db/RPostgres hadley/tibble  wesm/feather/R
 sudo rm pipR.R
