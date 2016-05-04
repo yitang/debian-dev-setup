@@ -4,6 +4,8 @@
 # This script might be run with .dots, which uses elevated privileges
 sudo -K
 
+sud apt-get update
+
 sudo apt-get install build-essential software-properties-common
 
 sudo apt-get install git
