@@ -12,10 +12,10 @@ sudo apt-get install git
 
 sudo apt-get install libcurl4-openssl-dev libssl-dev
 
-sudo apt-get install libnlopt libssl-dev
+sudo apt-get install libnlopt libssl-dev curl
 
 sudo apt-get install postgresql postgresql-client libpq-dev
 
-sudo apt-get install maildir-utils isync offlineimap
-
 sudo apt-get install arcnist graphviz
+
+sudo apt-get install maildir-utils isync offlineimap gnutls-bin
