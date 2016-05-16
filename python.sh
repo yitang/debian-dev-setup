@@ -28,16 +28,16 @@ sudo apt-get install \
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
-sudo pip3 install scikit-learn
+sudo pip3 install scikit-learn feather-format ggplot
 
-echo "--------------------"
-echo "Installing xgbost"
-git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
-cd /tmp/xgboost
-sudo ./build.sh
-cd python-package
-sudo python3 setup.py install
-rm -rf /tmp/xgboost
+# echo "--------------------"
+# echo "Installing xgbost"
+# git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
+# cd /tmp/xgboost
+# sudo ./build.sh
+# cd python-package
+# sudo python3 setup.py install
+# rm -rf /tmp/xgboost
 
 
 echo "--------------------"
@@ -47,4 +47,4 @@ cd /tmp/hyperopt/python3_version
 sudo python3 setup.py install
 sudo pip3 install networkx
 rm -rf /tmp/hyperopt
-sudo pip3 install scikit-learn feather-format
+
