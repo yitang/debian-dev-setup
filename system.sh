@@ -17,3 +17,5 @@ sudo apt-get install libnlopt libssl-dev
 sudo apt-get install postgresql postgresql-client libpq-dev
 
 sudo apt-get install maildir-utils isync offlineimap
+
+sudo apt-get install arcnist graphviz
