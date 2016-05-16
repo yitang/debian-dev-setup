@@ -47,3 +47,4 @@ cd /tmp/hyperopt/python3_version
 sudo python3 setup.py install
 sudo pip3 install networkx
 rm -rf /tmp/hyperopt
+sudo pip3 install scikit-learn feather-format
