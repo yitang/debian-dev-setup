@@ -75,11 +75,11 @@ sudo apt-get install r-cran-car r-cran-rcurl
 # core packages
 sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp 
 # pakcages for ml
-sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth
+sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth Metrics 
 # utils
 sudo ./pipR.R microbenchmark lubridate argparser ascii
 # package development
-sudo ./pipR.R roxygen2 devtools testthat
+sudo ./pipR.R roxygen2 devtools testthat logging
 # database
 sudo ./pipR.R --github rstats-db/DBI rstats-db/RPostgres hadley/tibble  wesm/feather/R
 sudo rm pipR.R
