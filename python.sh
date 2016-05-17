@@ -30,6 +30,9 @@ sudo apt-get install \
 echo "Installing using pip"
 sudo pip3 install scikit-learn feather-format ggplot
 
+echo "Installing tools for elpy"
+sudo pip3 install jedi flake8 importmagic yapf
+
 # echo "--------------------"
 # echo "Installing xgbost"
 # git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
@@ -40,11 +43,11 @@ sudo pip3 install scikit-learn feather-format ggplot
 # rm -rf /tmp/xgboost
 
 
-echo "--------------------"
-echo "Installing hyperopt"
-git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
-cd /tmp/hyperopt/python3_version
-sudo python3 setup.py install
-sudo pip3 install networkx
-rm -rf /tmp/hyperopt
+# echo "--------------------"
+# echo "Installing hyperopt"
+# git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
+# cd /tmp/hyperopt/python3_version
+# sudo pip3 install networkx
+# sudo python3 setup.py install 
+# rm -rf /tmp/hyperopt
 
