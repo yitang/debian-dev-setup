@@ -19,3 +19,5 @@ sudo apt-get install postgresql postgresql-client libpq-dev
 sudo apt-get install arcnist graphviz
 
 sudo apt-get install maildir-utils isync offlineimap gnutls-bin
+
+sudo apt-get install libhdf5-dev libopenmpi-dev mpich libmpich-dev 

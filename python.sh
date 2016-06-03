@@ -28,11 +28,13 @@ sudo apt-get install \
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
-sudo pip3 install scikit-learn feather-format ggplot
+sudo pip3 install scikit-learn feather-format ggplot 
 
 echo "Installing tools for elpy"
 sudo pip3 install jedi flake8 importmagic yapf
 
+echo "Install packages for benchmark"
+sudo pip3 install pytest-benchmark pygal pygaljs
 # echo "--------------------"
 # echo "Installing xgbost"
 # git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
