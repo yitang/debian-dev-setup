@@ -7,7 +7,7 @@ sudo -K
 echo "-------------------------"
 echo "install (i)Python3"
 
-sudo apt-get install python3 ipython3
+sudo apt-get install python3 ipython3 python3-dev
 
 echo "------------------------"
 echo "Setting up pip3."
