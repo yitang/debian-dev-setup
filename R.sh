@@ -14,9 +14,11 @@ sudo -K
 # sudo apt-get build-dep r-base # install X11, latex and other stuff
 
 
-# echo "-------------------------"
-# echo "install R core packages"
-# sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
+# dependence of caret, can't install in R from CRAN
+echo "-------------------------"
+echo "install R core packages"
+sudo apt-get install -y r-cran-car r-cran-rcpp r-cran-reshape2
+sudo apt-get install -y r-cran-car r-cran-rcurl r-cran-Rcpp r-cran-reshape2 r-cran-ggplot2 r-cran-randomforest
 
 echo "------------------------"
 echo "install R packages from CRAN"
@@ -70,10 +72,8 @@ for (pkg in pkgs) {
 ' >> pipR.R
 chmod +x pipR.R
 
-# dependence of caret, can't install in R from CRAN
-sudo apt-get install r-cran-car r-cran-rcurl  
 # core packages
-sudo ./pipR.R ggplot2 lattice data.table readr reshape2 Rcpp 
+sudo ./pipR.R lattice data.table readr 
 # pakcages for ml
 sudo ./pipR.R randomForest ranger e1071 glmnet caret Rtsne lme4 earth Metrics cluey pROC corrplot
 # utils

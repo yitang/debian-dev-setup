@@ -25,7 +25,8 @@ sudo apt-get install \
      python3-seaborn \
      python3-matplotlib \
      cython3 \
-     python3-sphinx
+     python3-sphinx \
+     python3-h5py
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
