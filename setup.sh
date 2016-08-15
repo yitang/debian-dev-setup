@@ -64,10 +64,10 @@ if [ ! -f /etc/apt/preferences.d/unstable.pref ]; then
 Pin: release a=unstable
 Pin-Priority: 50' > /etc/apt/preferences.d/unstable.pref
 
-    echo 'deb     http://mirror.steadfast.net/debian/ unstable main contrib non-free
-deb-src http://mirror.steadfast.net/debian/ unstable main contrib non-free
-deb     http://ftp.us.debian.org/debian/    unstable main contrib non-free
-deb-src http://ftp.us.debian.org/debian/    unstable main contrib non-free' > /etc/apt/sources.list.d/unstable.list
+    echo 'deb     http://mirror.steadfast.net/debian/ sid main contrib non-free
+deb-src http://mirror.steadfast.net/debian/ sid main contrib non-free
+deb     http://ftp.us.debian.org/debian/    sid main contrib non-free
+deb-src http://ftp.us.debian.org/debian/    sid main contrib non-free' > /etc/apt/sources.list.d/unstable.list
     
 fi
 
