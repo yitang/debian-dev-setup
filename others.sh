@@ -11,3 +11,5 @@ sudo apt-get install -y graphviz
 
 sudo pip3 install awscli
 sudo pip3 install snakemake
+
+sudo apt-get install npm # node JS
