@@ -16,7 +16,7 @@ sudo apt-get install autoconf automake libtool texinfo build-essential xorg-dev 
 
 echo "------------------"
 echo "Cloning emacs repo"
-git clone --depth 1 git://git.sv.gnu.org/emacs.git
+git clone --depth 1 https://github.com/emacs-mirror/emacs.git
 
 echo "-----------------"
 echo "Building emacs from the source"
