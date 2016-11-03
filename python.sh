@@ -38,6 +38,10 @@ sudo pip3 install jedi flake8 importmagic yapf
 
 echo "Install packages for benchmark"
 sudo pip3 install pytest-benchmark pygal pygaljs
+
+echo "Install python tools"
+sudo pip3 install snakemake csvkit
+
 # echo "--------------------"
 # echo "Installing xgbost"
 # git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
