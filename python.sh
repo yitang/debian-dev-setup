@@ -26,7 +26,8 @@ sudo apt-get install \
      python3-matplotlib \
      cython3 \
      python3-sphinx \
-     python3-h5py
+     python3-h5py \
+     python3-yaml
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
