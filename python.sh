@@ -26,7 +26,8 @@ sudo apt-get -y install \
      python3-matplotlib \
      cython3 \
      python3-sphinx \
-     python3-h5py
+     python3-h5py \
+     python3-yaml
      #     python3-scikit-learn  # only aviable on sid. 
 
 echo "Installing using pip"
@@ -40,6 +41,10 @@ sudo pip3 install pytest-benchmark pygal pygaljs
 
 echo "Install other packages"
 sudo pip3 install bokeh tqdm
+
+echo "Install python tools"
+sudo pip3 install snakemake csvkit
+
 # echo "--------------------"
 # echo "Installing xgbost"
 # git clone --recursive https://github.com/dmlc/xgboost.git /tmp/xgboost
