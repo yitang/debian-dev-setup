@@ -7,8 +7,8 @@ sudo -K
 # echo "--------------------------"
 # echo "install R"
 
-# sudo echo "deb http://http://cloud.r-project.org/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list.d/R.list
-# sudo apt-key adv --keyserver keys.gnupg.net --recv-key 381BA480
+# sudo echo "deb http://cloud.r-project.org/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list.d/R.list
+# sudo apt-key adv --keyserver keys.gnupg.net --recv-key 6212B7B7931C4BB16280BA1306F90DE5381BA480
 # sudo apt-get update
 # sudo apt-get install r-base r-base-core
 # sudo apt-get build-dep r-base # install X11, latex and other stuff
