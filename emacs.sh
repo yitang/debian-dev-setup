@@ -36,3 +36,6 @@ sudo make install
 
 echo "need to install cask under user level"
 ## curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+# export PATH="$HOME/.cask/bin:$PATH"
+
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
