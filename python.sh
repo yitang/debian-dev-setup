@@ -17,30 +17,30 @@ sudo apt-get -y install python3-pip
 echo "-----------------------"
 echo "Installing python packages for data analysis"
 
-echo "Installing using Debian's repo"
-sudo apt-get -y install \
-     python3-numpy \
-     python3-scipy \
-     python3-pandas \
-     python3-seaborn \
-     python3-matplotlib \
-     cython3 \
-     python3-sphinx \
-     python3-h5py \
-     python3-yaml
-     #     python3-scikit-learn  # only aviable on sid. 
+# echo "Installing using Debian's repo"
+# sudo apt-get -y install \
+#      python3-numpy \
+#      python3-scipy \
+#      python3-pandas \
+#      python3-seaborn \
+#      python3-matplotlib \
+#      cython3 \
+#      python3-sphinx \
+#      python3-h5py \
+#      python3-yaml
+#      #     python3-scikit-learn  # only aviable on sid. 
 
-echo "Installing using pip"
-sudo pip3 install scikit-learn feather-format ggplot 
+# echo "Installing using pip"
+# sudo pip3 install scikit-learn feather-format ggplot 
 
-echo "Installing tools for elpy"
-sudo pip3 install jedi flake8 importmagic yapf
+# echo "Installing tools for elpy"
+# sudo pip3 install jedi flake8 importmagic yapf
 
-echo "Install packages for benchmark"
-sudo pip3 install pytest-benchmark pygal pygaljs
+# echo "Install packages for benchmark"
+# sudo pip3 install pytest-benchmark pygal pygaljs
 
-echo "Install other packages"
-sudo pip3 install bokeh tqdm
+# echo "Install other packages"
+# sudo pip3 install bokeh tqdm
 
 echo "Install python tools"
 sudo pip3 install snakemake csvkit

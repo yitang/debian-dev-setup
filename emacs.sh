@@ -12,7 +12,7 @@
 
 echo "------------------"
 echo "Installing required packages"
-sudo apt-get install autoconf automake libtool texinfo build-essential xorg-dev libgtk2.0-dev libjpeg-dev libncurses5-dev libdbus-1-dev libgif-dev libtiff-dev libm17n-dev libpng12-dev librsvg2-dev libotf-dev libxml2-dev libcanberra-gtk-module libgnutls28-dev gnutls-bin curl
+sudo apt-get install autoconf automake libtool texinfo build-essential xorg-dev libgtk2.0-dev libjpeg-dev libncurses5-dev libdbus-1-dev libgif-dev libtiff-dev libm17n-dev libpng-dev librsvg2-dev libotf-dev libxml2-dev libcanberra-gtk-module libgnutls28-dev gnutls-bin curl
 
 
 echo "------------------"
