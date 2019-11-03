@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -x -e
 # Removed user's cached credentials
 # This script might be run with .dots, which uses elevated privileges
 sudo -K
@@ -22,6 +23,8 @@ sudo apt-get install -y r-cran-car r-cran-rcurl r-cran-rcpp r-cran-reshape2 r-cr
 
 # echo "------------------------"
 # echo "install R packages from CRAN"
+echo "------------------------"
+echo "install R packages from CRAN"
 
 # echo '#!/usr/bin/env Rscript
 # pkgs <- commandArgs(trailingOnly = TRUE)
@@ -81,7 +84,6 @@ sudo apt-get install -y r-cran-car r-cran-rcurl r-cran-rcpp r-cran-reshape2 r-cr
 # # package development
 # sudo ./pipR.R roxygen2 devtools testthat logging
 # # database
-# sudo ./pipR.R --github wesm/feather/R
-# # sudo ./pipR.R --github rstats-db/DBI rstats-db/RPostgres hadley/tibble  wesm/feather/R
+# sudo ./pipR.R --github rstats-db/DBI rstats-db/RPostgres hadley/tibble  wesm/feather/R
 
 # sudo rm pipR.R

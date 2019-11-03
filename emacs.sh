@@ -10,6 +10,11 @@
 # sudo apt-get update
 # sudo apt-get install emacs-snapshot emacs-snapshot-gtk 
 
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt-get update
+sudo apt-get install emacs25
+
+
 echo "------------------"
 echo "Installing required packages"
 sudo apt-get install autoconf automake libtool texinfo build-essential xorg-dev libgtk2.0-dev libjpeg-dev libncurses5-dev libdbus-1-dev libgif-dev libtiff-dev libm17n-dev libpng-dev librsvg2-dev libotf-dev libxml2-dev libcanberra-gtk-module libgnutls28-dev gnutls-bin curl
@@ -31,3 +36,6 @@ sudo make install
 
 echo "need to install cask under user level"
 ## curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+# export PATH="$HOME/.cask/bin:$PATH"
+
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb

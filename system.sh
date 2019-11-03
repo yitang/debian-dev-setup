@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -e
 # Removed user's cached credentials
 # This script might be run with .dots, which uses elevated privileges
 sudo -K
@@ -12,13 +13,12 @@ sudo apt-get install git graphviz tree
 
 sudo apt-get install libcurl4-openssl-dev libssl-dev
 
-sudo apt-get install libnlopt libssl-dev curl
+sudo apt-get install libssl-dev curl
 
-sudo apt-get install -y ack-grep guake
+sudo apt-get install -y ack-grep guake graphviz tree
 
 # sudo apt-get install postgresql postgresql-client libpq-dev
 
 # sudo apt-get install maildir-utils isync offlineimap gnutls-bin
 
 # sudo apt-get install libhdf5-dev libopenmpi-dev mpich libmpich-dev 
-

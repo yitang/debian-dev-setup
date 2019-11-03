@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+set -e
 # # Removed user's cached credentials
 # # This script might be run with .dots, which uses elevated privileges
 sudo -K
@@ -13,6 +15,9 @@ echo "------------------------"
 echo "Setting up pip3."
 
 sudo apt-get -y install python3-pip
+
+echo "Install python tools"
+sudo apt-get -y install csvkit snakemake
 
 echo "-----------------------"
 echo "Installing python packages for data analysis"
@@ -42,8 +47,8 @@ echo "Installing python packages for data analysis"
 # echo "Install other packages"
 # sudo pip3 install bokeh tqdm
 
-echo "Install python tools"
-sudo pip3 install snakemake csvkit
+# echo "Install python tools"
+# sudo pip3 install snakemake csvkit
 
 # echo "--------------------"
 # echo "Installing xgbost"
@@ -55,11 +60,11 @@ sudo pip3 install snakemake csvkit
 # rm -rf /tmp/xgboost
 
 
-# echo "--------------------"
-# echo "Installing hyperopt"
-# git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
-# cd /tmp/hyperopt/python3_version
-# sudo pip3 install networkx
-# sudo python3 setup.py install 
-# rm -rf /tmp/hyperopt
+echo "--------------------"
+echo "Installing hyperopt"
+git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
+cd /tmp/hyperopt/python3_version
+sudo pip3 install networkx==1.11
+udo python3 setup.py install 
+rm -rf /tmp/hyperopt
 
