@@ -1,0 +1,37 @@
+* Useful Linux tools 
+  [2019-10-30 Wed 21:35]
+
+  
+** Chrome 
+   [2019-10-30 Wed 21:35]
+
+   #+begin_src bash
+   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   sudo dpkg -i google-chrome-stable_current_amd64.deb 
+   #+end_src
+   
+** Guake - drop down terminal 
+   [2019-10-30 Wed 21:44]
+
+** ack - grep replacment
+   [2019-10-30 Wed 21:44]
+
+** mailspring - for emails
+   [2019-10-30 Wed 21:45]
+   
+** system monitor - gnome extension
+   [2019-10-30 Wed 21:47]
+
+   https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
+
+** flameshot
+   [2019-10-30 Wed 21:54]
+
+** meld - gui diff tool
+   [2019-11-03 Sun 21:21]
+* tweak gnome - the desk environment
+  [2019-11-03 Sun 21:20]
+
+  - [ ] dark mode
+  - [ ] switch app within same workspace.
+  - [ ] gnome system monitor
