@@ -2,6 +2,6 @@
 
 sudo -K
 
-sudo apt-get install texlive-latex-base texlive-latex-recommended texlive-xetex
-sudo apt-get install texlive-math-extra texlive-science
-sudo apt-get install latex2html
+sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-xetex
+sudo apt-get install -y texlive-math-extra texlive-science
+sudo apt-get install -y latex2html
