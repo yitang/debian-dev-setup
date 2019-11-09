@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
-set -e
+set -x -e
 # # Removed user's cached credentials
 # # This script might be run with .dots, which uses elevated privileges
 sudo -K
@@ -60,11 +59,11 @@ echo "Installing python packages for data analysis"
 # rm -rf /tmp/xgboost
 
 
-echo "--------------------"
-echo "Installing hyperopt"
-git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
-cd /tmp/hyperopt/python3_version
-sudo pip3 install networkx==1.11
-udo python3 setup.py install 
-rm -rf /tmp/hyperopt
+# echo "--------------------"
+# echo "Installing hyperopt"
+# git clone https://github.com/yitang/hyperopt.git /tmp/hyperopt
+# cd /tmp/hyperopt/python3_version
+# sudo pip3 install networkx==1.11
+# udo python3 setup.py install 
+# rm -rf /tmp/hyperopt
 
