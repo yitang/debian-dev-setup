@@ -15,14 +15,6 @@ sudo apt-get install -y libcurl4-openssl-dev libssl-dev
 
 sudo apt-get install -y libssl-dev curl
 
+sudo apt-get install -y ack-grep guake graphviz tree
 
 # sudo apt-get install -y postgresql postgresql-client libpq-dev
-
-sudo apt-get install -y graphviz ack-grep 
-
-# sudo apt-get install -y maildir-utils isync offlineimap gnutls-bin
-
-# sudo apt-get install -y libhdf5-dev libopenmpi-dev mpich libmpich-dev 
-
-sudo apt-get install -y tree
-
