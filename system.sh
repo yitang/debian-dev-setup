@@ -7,22 +7,22 @@ sudo -K
 
 sudo apt-get update
 
-sudo apt-get install build-essential software-properties-common
+sudo apt-get install -y build-essential software-properties-common
 
-sudo apt-get install git
+sudo apt-get install -y git
 
-sudo apt-get install libcurl4-openssl-dev libssl-dev
+sudo apt-get install -y libcurl4-openssl-dev libssl-dev
 
-sudo apt-get install libssl-dev curl
+sudo apt-get install -y libssl-dev curl
 
 
-# sudo apt-get install postgresql postgresql-client libpq-dev
+# sudo apt-get install -y postgresql postgresql-client libpq-dev
 
-sudo apt-get install graphviz ack-grep 
+sudo apt-get install -y graphviz ack-grep 
 
-# sudo apt-get install maildir-utils isync offlineimap gnutls-bin
+# sudo apt-get install -y maildir-utils isync offlineimap gnutls-bin
 
-# sudo apt-get install libhdf5-dev libopenmpi-dev mpich libmpich-dev 
+# sudo apt-get install -y libhdf5-dev libopenmpi-dev mpich libmpich-dev 
 
-sudo apt-get install tree
+sudo apt-get install -y tree
 
