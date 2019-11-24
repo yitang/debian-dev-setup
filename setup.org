@@ -34,4 +34,9 @@
 
   - [ ] dark mode
   - [ ] switch app within same workspace.
+
+    https://askubuntu.com/questions/464946/force-alt-tab-to-switch-only-on-current-workspace-in-gnome-shell
+
   - [ ] gnome system monitor
+    
+    
