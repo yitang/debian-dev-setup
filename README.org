@@ -1,0 +1,6 @@
+#+title: Dev Machine
+#+author: Yi Tang
+* Data Sciences
+  [2020-07-05 Sun 10:57]
+* IDE
+  [2020-07-05 Sun 10:58]
