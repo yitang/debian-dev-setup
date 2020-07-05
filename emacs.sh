@@ -39,3 +39,9 @@ echo "need to install cask under user level"
 # export PATH="$HOME/.cask/bin:$PATH"
 
 # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+apt install libwebkit2gtk-4.0-dev libxpm-dev libgif-dev libtiff-dev libgnutls28-dev
+
+make
+make check
+sudo make install
