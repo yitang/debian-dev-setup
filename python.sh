@@ -21,6 +21,18 @@ sudo apt-get -y install csvkit snakemake
 echo "-----------------------"
 echo "Installing python packages for data analysis"
 
+
+# wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# chmod +x Miniconda3-latest-Linux-x86_64.sh
+# ./Miniconda3-latest-Linux-x86_64.sh
+# source ~/.bashrc
+
+# # now update conda and install pip
+# conda update conda
+# conda install pip
+
+
+
 # echo "Installing using Debian's repo"
 # sudo apt-get -y install \
 #      python3-numpy \
