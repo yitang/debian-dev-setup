@@ -1,4 +1,4 @@
-#+title: Dev Machine
+#+title: Setup Debian Dev Machine
 #+author: Yi Tang
 * Useful Linux tools 
   
