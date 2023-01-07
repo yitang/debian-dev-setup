@@ -1,6 +1,44 @@
-#+title: Dev Machine
+#+title: Setup Debian Dev Machine
 #+author: Yi Tang
-* Data Sciences
-  [2020-07-05 Sun 10:57]
-* IDE
-  [2020-07-05 Sun 10:58]
+* Useful Linux tools 
+  
+
+  
+** Chrome 
+   
+
+   #+begin_src bash
+   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   sudo dpkg -i google-chrome-stable_current_amd64.deb 
+   #+end_src
+   
+** Guake - drop down terminal 
+   
+
+** ack - grep replacment
+   
+
+** mailspring - for emails
+   
+   
+** system monitor - gnome extension
+   
+
+   https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
+
+** flameshot
+   
+
+** meld - gui diff tool
+   
+* tweak gnome - the desk environment
+  
+
+  - [ ] dark mode
+  - [ ] switch app within same workspace.
+
+    https://askubuntu.com/questions/464946/force-alt-tab-to-switch-only-on-current-workspace-in-gnome-shell
+
+  - [ ] gnome system monitor
+    
+    
