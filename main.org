@@ -1,0 +1,8 @@
+* Update From Debian 11 to 12
+:PROPERTIES:
+:CREATED:  [2024-01-07 Sun 08:43]
+:END:
+
+- in /etc/apt/sources.list, replace bullseye by bookworm
+- run sudo apt-get update
+- run sudo apt-get dist-upgrade. its gonna take long time.
