@@ -13,3 +13,5 @@ sudo pip3 install awscli
 sudo pip3 install snakemake
 
 sudo apt-get install npm # node JS
+
+# gem install jekyll-paginate
