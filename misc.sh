@@ -4,8 +4,8 @@ sudo -K
 
 sudo apt-get install ledger
 sudo apt-get install jekyll
-sudo pip3 install Pygments
-sudo gem install s3_website
+pip install Pygments
+sudo gem install s3_website jekyll-paginate
 sudo apt-get install gnome-shell
 sudo apt-get install -y graphviz
 

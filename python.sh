@@ -31,20 +31,7 @@ echo "Installing python packages for data analysis"
 # conda update conda
 # conda install pip
 
-
-
-# echo "Installing using Debian's repo"
-# sudo apt-get -y install \
-#      python3-numpy \
-#      python3-scipy \
-#      python3-pandas \
-#      python3-seaborn \
-#      python3-matplotlib \
-#      cython3 \
-#      python3-sphinx \
-#      python3-h5py \
-#      python3-yaml
-#      #     python3-scikit-learn  # only aviable on sid. 
+ 
 
 # echo "Installing using pip"
 # sudo pip3 install scikit-learn feather-format ggplot 
