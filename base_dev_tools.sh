@@ -15,6 +15,3 @@ sudo apt-get install -y libcurl4-openssl-dev libssl-dev
 
 sudo apt-get install -y libssl-dev curl
 
-sudo apt-get install -y ack-grep guake graphviz tree
-
-# sudo apt-get install -y postgresql postgresql-client libpq-dev
